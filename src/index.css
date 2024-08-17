@@ -1,0 +1,231 @@
+/* Estilos Globales */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size:xx-large;
+    text-align: center;
+}
+
+h2{
+    font-size:larger;
+}
+
+/* Contenedor principal */
+.App {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Estilo de los inputs */
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.total-bugdet{
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 3px;
+    background-color: #243241;
+    color: #f8f8f8;
+    border-radius: 5px;
+    margin-left: 3.7rem;
+}
+
+/* Botones */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.button-calcular{
+    margin-top: 1.5rem;
+}
+
+.button-budget{
+    width: 8rem;
+}
+
+.button-add {
+    background-color: #007BFF;
+    color: white;
+  }
+
+  
+  .button-update {
+    background-color: green;
+    color: white;
+  }
+  
+  .button-cancel {
+    background-color: red;
+    color: white;
+  }
+
+.button-edit{
+    background-color: rgb(59, 148, 65);
+}
+.button-edit:hover{
+    background-color: rgb(45, 112, 49);
+}
+
+.button-delete{
+    background-color: #d4342c;
+}
+.button-delete:hover{
+    background-color: #a12821;
+}
+
+.refresh-label {
+    margin: 1rem;
+    /* padding: 10px 10px; */
+    font-size: 16px;
+    /* background-color: #243241; */
+    color:#243241;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration:underline;
+    text-align: center;
+  }
+  
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #d1d0d0;
+    text-align: left;
+}
+
+table th {
+    background-color: #243241;
+    color: white;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+.table-total{
+    background-color: #243241;
+    text-align: right;
+    font-weight: bold;
+    color:#f9f9f9;
+}
+
+.table-contribution{
+    background-color: #c0c2c4;
+    font-weight: bold;
+}
+
+/* Estilos responsivos */
+@media (max-width: 500px) {
+    .App {
+        padding: 10px;
+    }
+
+    input[type="text"], input[type="number"] {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    /* Hacer la tabla "scrollable" en pantallas pequeñas */
+    .App table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+
+  
+/* ---------- RESULTS ------------- */
+
+.results-container {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.results-list {
+    list-style-type: none;  /* Quita los puntos o números de la lista */
+    padding: 0;
+    margin: 0;
+}
+
+.result-item {
+    background-color:#c0c2c4;  /* Color de fondo suave */
+    border-radius: 8px;  /* Bordes redondeados */
+    margin-bottom: 10px;  /* Espacio entre los elementos de la lista */
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.result-name{
+    color:#243241;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.result-item.positive {
+    background-color: #eae9e9;
+    color: green;  /* Color de texto verde para "recibe" */
+}
+
+.result-item.negative {
+    background-color: #eae9e9;
+    color: red;  /* Color de texto rojo para "debe" */
+}
+
+.neutral {
+    background-color: #eae9e9;
+    color: #f1a714;
+}
+
+.p-result{
+    background-color: #eae9e9;
+    padding: 3px;
+}
